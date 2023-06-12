@@ -1,4 +1,4 @@
-
+from PRIMI import primo
 
 def numeriDispari():
     print("Il tuo numero è tra i seguenti?")
@@ -15,7 +15,8 @@ def secondo():
         for j in range(4):
             listsecondo=listsecondo+[i]
             i=i+1
-    i=i+4
+        i=i+4
+    print(listsecondo)
 
 def bello():
     print("Il tuo numero è tra i seguenti?")
@@ -39,7 +40,7 @@ def neuroni():
 # prima domanda (1,3,5)
 numeriDispari()
 # seconda domanda (partendo da 2 scrivo 2 numeri sì e 2 no) PRIMO
-
+primo()
 # terza domanda (partendo da 4 scrivo 4 numeri sì e 4 no) SECONDO
 secondo()
 # quarta domanda (partendo da 8 scrivo 8 numeri sì e 8 no) GIULIA
