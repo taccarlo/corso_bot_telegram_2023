@@ -13,7 +13,7 @@ if (controllo == False):
         controllo = True
     else:
         print ("Non succede nulla, ma la presenza è molto vicina")
-if (contollo == False):
+if (controllo == False):
     parola = str(input("inserire parola amici: "))
     if (parola == "amici"):
         print ("Benvenuti a Moria")
