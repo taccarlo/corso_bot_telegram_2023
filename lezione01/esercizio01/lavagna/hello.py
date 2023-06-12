@@ -1,5 +1,10 @@
-print("hello world")
-anni = int(input("Inserisci i tuoi anni:"))
-print("Hai", anni, "anni!")
-annodinascita = 2023-anni
-print("Se nato nell'anno", annodinascita)
+n=int(input("inserisci un numero"))
+m=int(input("inserisci un altro numero"))
+if(n%2==0) and (m%2==0):
+  print("i numeri sono entrambi pari")
+elif(n%2==0) and (m%2!=0):
+    print("il primo numero è pari mentre il secondo è dispari")
+elif(n%2!=0) and (m%2==0):
+    print("il prmo numero è dispari e il secondo è pari")
+else:
+    print("i numeri sono entrambi dispari")
