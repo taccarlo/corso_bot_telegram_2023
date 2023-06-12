@@ -1,11 +1,22 @@
-Scriviamo un programma che per prima cosa stampa la 
-stringa “Dite amici ed entrate” e ci chiede di inserire 
-una parola (che dovrebbe essere “amici”). Se sbagliamo il 
-programma dovrà scrivere “Non succede nulla, ma sento una
- presenza che si avvicina” e dovrà chiederci nuovamente la 
- parola; se sbaglieremo ancora dovrà scrivere “Non succede 
- nulla, ma la presenza è molto vicina” e dovrà richiederci 
- la parola. Se sbagliamo per la terza volta scriverà 
- “Il mostro è qui, dobbiamo fuggire!” e poi il programma deve finire.
-Se in qualsiasi momento inseriamo la parola “amici” 
-il programma deve stampare “Benvenuti a Moria” e deve terminare.
+ 
+
+print("Dite amici ed entrate")
+
+i=3
+
+while(i<4 and i>0):
+    parola=input("Inserisci la passsword: ")
+    if(parola=="amici"):
+        print("Benvenuti a Moria!")
+        i=0
+    elif(i==3 and parola!="amici"):
+        print("Non succede nulla, ma sento una presenza che si avvicina")
+        i-=1
+    elif(i==2 and parola!="amici"):
+        print("Non succede nulla, ma la presenza è molto vicina")
+        i-=1
+    elif(i==1 and parola!="amici"):
+        print("Il mostro è qui, dobbiamo fuggire!")
+        i-=1
+
+
