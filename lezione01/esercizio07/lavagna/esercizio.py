@@ -1,5 +1,35 @@
-from PRIMI import primo
-from gruppoGIULIA import Stampa
+from calcolatore import ottieniRisposta
+
+numeroMagico = 0
+
+def Stampa():
+    print("Il tuo numero è tra i seguenti?")
+    i = 0
+    list=[]
+    for x in range(8, 63):
+        if(i<8):
+            list.append(x)
+            i += 1
+        elif(i < 15):
+            i += 1
+        else:
+            i=0
+    print(list)
+    global numeroMagico
+    num = numeroMagico
+    numeroMagico = ottieniRisposta(num, 3)
+
+def primo():
+    print("Il tuo numero è tra i seguenti?")
+    list=[]
+    for i in range(2, 62, 4):
+        list.append(i)
+        list=list+[i+1]
+    print(list," ")
+
+    global numeroMagico
+    num = numeroMagico
+    numeroMagico = ottieniRisposta(num, 1)
 
 def numeriDispari():
     print("Il tuo numero è tra i seguenti?")
@@ -7,6 +37,10 @@ def numeriDispari():
     for x in range(1, 63,2):
         list.append(x)
     print(list, " ")
+
+    global numeroMagico
+    num = numeroMagico
+    numeroMagico = ottieniRisposta(num, 0)
 
 def secondo():
     i=4
@@ -19,6 +53,10 @@ def secondo():
         i=i+4
     print(listsecondo)
 
+    global numeroMagico
+    num = numeroMagico
+    numeroMagico = ottieniRisposta(num, 2)
+
 def bello():
     print("Il tuo numero è tra i seguenti?")
     list = []
@@ -27,17 +65,21 @@ def bello():
     for x in range(48, 63):
         list.append(x)
     print(list)
+    global numeroMagico
+    num = numeroMagico
+    numeroMagico = ottieniRisposta(num, 4)
 
 def neuroni():
     print("Il tuo numero è tra i seguenti?")
     list = []
-
     for x in range(32,63):
         list.append(x)
     print(list)
 
+    global numeroMagico
+    num = numeroMagico
+    numeroMagico = ottieniRisposta(num, 5)
 
-    
 # prima domanda (1,3,5)
 numeriDispari()
 # seconda domanda (partendo da 2 scrivo 2 numeri sì e 2 no) PRIMO
@@ -50,3 +92,5 @@ Stampa()
 bello()
 # sesta domanda (partendo da 32 scrivo 32 numeri sì e 32 no) TRE NEURONI SOMMATI
 neuroni()
+
+print("Il numero pensato è ", numeroMagico)
