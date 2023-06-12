@@ -28,12 +28,10 @@ listaunita=lista1+lista2
 print(listaunita)
 
 
-
-#Prendere in input una lista, la controlla 
-#e se contiene almeno un valore che non sia un intero ritorna un errore. 
-#Altrimenti dare in output una lista che in prima posizione contiene
-#il valore minimo dell’input, in seconda posizione la media e in terza posizione 
-#contiene il valore massimo.
+#chiedo una lista di valori in input nella prima lista
+#metto in prima posizione nella lista "risultato" il valore minimo 
+#metto in seconda posizione nella lista "risultato" la media
+#metto in terza posizione nella lista "risultato" il valore massimo 
 
 lista1=[]
 i=0
@@ -43,4 +41,5 @@ while i<4:
     lista1.append(val)
     i=i+1
 risultato=[]
-
+max=
+risultato[1]=
