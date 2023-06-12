@@ -15,6 +15,8 @@ def Domanda():
     global tentativo
 
     parola = input ("INSERISCI UNA PAROLA")
+    if ( parola == "amici"):
+        print ("Benvenuti a Moria” e deve terminare")
     if ( parola != "amici"):
         if (tentativo < 3) :
             Sbagliato()
