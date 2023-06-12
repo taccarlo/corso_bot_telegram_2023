@@ -1,4 +1,5 @@
 from PRIMI import primo
+from gruppoGIULIA import Stampa
 
 def numeriDispari():
     print("Il tuo numero è tra i seguenti?")
@@ -35,7 +36,7 @@ primo()
 # terza domanda (partendo da 4 scrivo 4 numeri sì e 4 no) SECONDO
 secondo()
 # quarta domanda (partendo da 8 scrivo 8 numeri sì e 8 no) GIULIA
-
+Stampa()
 # quinta domanda (partendo da 16 scrivo 16 numeri sì e 16 no) BELLO
 bello()
 # sesta domanda (partendo da 32 scrivo 32 numeri sì e 32 no) TRE NEURONI SOMMATI
