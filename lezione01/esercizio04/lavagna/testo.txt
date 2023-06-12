@@ -4,7 +4,7 @@ lista che scambi le occorrenze di una lettera con un'altra.
 Concatenare due liste prese da tastiera
 
 Prendere in input una lista, la controlla 
-e se contiene almeno un valore che non sia un intero ritorna un errore. 
-Altrimenti dare in output una lista che in prima posizione contiene
-il valore minimo dell’input, in seconda posizione la media e in terza posizione 
-contiene il valore massimo.
+    e se contiene almeno un valore che non sia un intero ritorna un errore. 
+    Altrimenti dare in output una lista che in prima posizione contiene
+    il valore minimo dell'input, in seconda posizione la media e in terza posizione 
+    contiene il valore massimo.
