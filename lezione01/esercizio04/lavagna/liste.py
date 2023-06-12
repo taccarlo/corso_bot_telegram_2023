@@ -54,3 +54,11 @@ risultato = []
 
 # metto in terza posizione nella lista "risultato" il valore massimo della lista
 
+
+# Trovare il valore massimo nella lista
+valore_massimo = lista[0]
+for elemento in lista:
+    if elemento > valore_massimo:
+        valore_massimo = elemento
+risultato.append(valore_massimo)
+print(risultato)
