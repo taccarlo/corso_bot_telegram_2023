@@ -41,5 +41,4 @@ while i<4:
     lista1.append(val)
     i=i+1
 risultato=[]
-max=
-risultato[1]=
+
