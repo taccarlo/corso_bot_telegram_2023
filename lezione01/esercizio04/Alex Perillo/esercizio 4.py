@@ -6,7 +6,7 @@
    # i=i+1
 #print("Hai inserito: ",lista)
 
-lista =[]
+lista =["ciao","halo","bonjour","hello"]
 i=0
 while i<4:
     val = input("Inserisci un valore: ")
