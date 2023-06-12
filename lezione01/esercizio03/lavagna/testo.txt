@@ -1,4 +1,4 @@
-Scriviamo un programma che per prima cosa stampa la 
+"Scriviamo un programma che per prima cosa stampa la 
 stringa “Dite amici ed entrate” e ci chiede di inserire 
 una parola (che dovrebbe essere “amici”). Se sbagliamo il 
 programma dovrà scrivere “Non succede nulla, ma sento una
@@ -8,4 +8,14 @@ programma dovrà scrivere “Non succede nulla, ma sento una
  la parola. Se sbagliamo per la terza volta scriverà 
  “Il mostro è qui, dobbiamo fuggire!” e poi il programma deve finire.
 Se in qualsiasi momento inseriamo la parola “amici” 
-il programma deve stampare “Benvenuti a Moria” e deve terminare.
+il programma deve stampare “Benvenuti a Moria” e deve terminare."
+
+print("dite amici ad entrare")
+parola = input()
+if parola == ("amici"):
+    print("benvenuto")
+elif parola =! ("amici"):
+    print("errato")
+
+
+
