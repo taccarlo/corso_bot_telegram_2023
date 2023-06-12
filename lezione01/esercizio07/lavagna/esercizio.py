@@ -28,7 +28,16 @@ def bello():
         list.append(x)
     print(list)
 
+def neuroni():
+    print("Il tuo numero è tra i seguenti?")
+    list = []
 
+    for x in range(32,63):
+        list.append(x)
+    print(list)
+
+
+    
 # prima domanda (1,3,5)
 numeriDispari()
 # seconda domanda (partendo da 2 scrivo 2 numeri sì e 2 no) PRIMO
@@ -40,3 +49,4 @@ Stampa()
 # quinta domanda (partendo da 16 scrivo 16 numeri sì e 16 no) BELLO
 bello()
 # sesta domanda (partendo da 32 scrivo 32 numeri sì e 32 no) TRE NEURONI SOMMATI
+neuroni()
