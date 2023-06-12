@@ -1,13 +1,22 @@
-# Vogliamo scrivere un programma che controlla se 
-# due numeri inseriti dall’utente sono pari.
-
-tentativoUno = int(input("inserisci il primo numero: "))
-tentativoDue = int(input("inserisci il secondo numero: "))
-if (tentativoUno %2 == 0):
-    print (tentativoUno, "è pari")
-else:
-    print (tentativoUno, "è dispari")
-if (tentativoDue %2 == 0):
-    print (tentativoDue, "è pari")
-else:
-    print (tentativoDue, "è dispari")
+print ("Dite amici ed entrate")
+parola = str(input("inserire parola amici: "))
+controllo = False
+if (controllo == False and parola == "amici"):
+    print ("Benvenuti a Moria")
+    controllo = True
+else :
+    print ("Non succede nulla, ma sento una presenza che si avvicina")
+if (controllo == False):
+    parola = str(input("inserire parola amici: "))
+    if (parola == "amici"):
+        print ("Benvenuti a Moria")
+        controllo = True
+    else:
+        print ("Non succede nulla, ma la presenza è molto vicina")
+if (contollo == False):
+    parola = str(input("inserire parola amici: "))
+    if (parola == "amici"):
+        print ("Benvenuti a Moria")
+        controllo = True
+    else:
+        print ("Il mostro è qui, dobbiamo fuggire!")
