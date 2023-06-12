@@ -51,7 +51,10 @@ risultato = []
 # metto in prima posizione nella lista "risultato" il valore minimo dell'input 
 
 # metto in seconda posizione nella lista "risultato" la media
-
+s = lista[0] + lista[1] + lista[2]+ lista[3]
+m = s/4
+risultato.append(m)
+print(risultato)
 # metto in terza posizione nella lista "risultato" il valore massimo della lista
 
 
