@@ -11,8 +11,14 @@ if parola == 'amici':
 if parola != 'amici':
     print('Non succede nulla, ma sento una presenza che si avvicina')
     input('Dite amici ed entrate')
+    if parola == 'amici':
+    print('Benvenuti a Moria')
 if parola != 'amici':
     print('Non succede  nulla, ma la presenza è molto vicina')
     input('Dite amici ed entrate')
+    if parola == 'amici':
+    print('Benvenuti a Moria')
 if parola != 'amici':
     print('Il mostro è qui, dobbiamo fuggire!')
+    if parola == 'amici':
+    print('Benvenuti a Moria')
