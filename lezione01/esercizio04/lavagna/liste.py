@@ -56,6 +56,13 @@ m = s/4
 risultato.append(m)
 print(risultato)
 # metto in terza posizione nella lista "risultato" il valore massimo della lista
+valore = max(lista)
+variabile= lista.index(max(lista))
+
+
+lista[variabile] = lista[3]
+lista[3] = valore
+
 
 
 # Trovare il valore massimo nella lista
