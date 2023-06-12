@@ -1,0 +1,7 @@
+def neuroni():
+    print("Il tuo numero è tra i seguenti?")
+    list = []
+
+    for x in range(32,63):
+        list.append(x)
+    print(list)
