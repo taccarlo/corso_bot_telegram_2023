@@ -1,5 +1,3 @@
- 
-
 print("Dite amici ed entrate")
 
 i=3
@@ -18,5 +16,3 @@ while(i<4 and i>0):
     elif(i==1 and parola!="amici"):
         print("Il mostro è qui, dobbiamo fuggire!")
         i-=1
-
-
