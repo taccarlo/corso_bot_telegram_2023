@@ -14,12 +14,11 @@ def rosso():
         
 
 def blu():
-    s=1
-    n=0
+    
     r=input("E di bere qualcosa di caldo?")
-    while r!=0 and r!=1:
+    while r!="si" and r!="no":
         r=input("E di bere qualcosa di caldo?")
-    if (r==1):
+    if (r=="si"):
         r=input("scegli cosa vuoi bere: tè, caffè, cioccolata")
         while(r!="tè" and r!="caffè" and r!="cioccolata"):
             r=input("scegli cosa vuoi bere: tè, caffè, cioccolata")
