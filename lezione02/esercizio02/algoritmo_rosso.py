@@ -1,13 +1,10 @@
 #algoritmo dell'amicizia big bang theory
 def grupporosso():
 
-    NumeroTelefono=print ("Componi il numero di telefono della persona desiderata:")
 
-    NumeroTelefono=int(NumeroTelefono) 
+    NumeroTelefono=int(input("Componi il numero di telefono della persona desiderata:") )
 
     Risposta1=print ("Sei in casa? S o N.")
-
-
 
     if (Risposta1=="S"):
         Risposta2=print ("Ti va di mangiare qualcosa? S o N")
