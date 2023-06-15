@@ -18,7 +18,7 @@ def funzione3():
 
 def funzione2():
 
-    s1 = input("E di bere qualcosa di caldo? ")
+    s1 = input("E di bere qualcosa di caldo? (inserisci o sì o no) ")
     risposta = s1.lower() #semplifico il controllo della stringa facendo diventare tutti i caratteri minuscoli
     
     if s1 == "si":
@@ -45,8 +45,9 @@ def inCasa(aCasa):
         mangiare()
     
 def mangiare():
-    risposta = str(input("Ti va di andare a mangiare qualcosa insieme?\n"))
+    risposta = str(input("Ti va di mangiare qualcosa insieme?\n"))
     if(risposta == 1):
+        print("mangiare qualcosa insieme")
         print("Siete diventati amici!!")
     else:
         funzione2()#chiamata della seconda funzione in caso no
