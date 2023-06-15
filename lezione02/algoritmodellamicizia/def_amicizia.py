@@ -23,7 +23,7 @@ def No():
         
 def blu():
     r=input("E di bere qualcosa di caldo?(S/N) ")
-    if r == ("N"):
+    if r == ("N") or r == ("n"):
         verde()
     else:
         c = input("Scegli: ")
