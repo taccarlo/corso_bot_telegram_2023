@@ -13,3 +13,5 @@ def blu():
         else:
             print ("Fatevi sta cioccolata")
         print("Siete diventati amici, hai una persona in più a cui poter rompere le palle in caso di bisongo e viceversa")
+    else:
+        #qua funzione verde
