@@ -17,4 +17,3 @@ def funzione2():
     else:
         print ("Rispondi con si o no") #in caso la risposta non sia si o no ripropongo la domanda
         funzione2()
-funzione2()
