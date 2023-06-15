@@ -1,6 +1,0 @@
-Ciao sono Carlo
-<<<<<<< Updated upstream
-
-Ciao
-=======
->>>>>>> Stashed changes

@@ -1,0 +1,14 @@
+Leggere un numero da terminale e controllare se è pari;
+se lo è stampate “pari” a terminale, altrimenti leggete un secondo numero.
+Se il secondo numero è dispari stampate “entrambi dispari”, 
+altrimenti stampate “primo dispari, secondo pari”
+
+Dati tre numeri identificare il minimo e il massimo
+
+Si realizzi un programma che acquisisca da tastiera un numero
+e stampi il valore assoluto di tale numero.
+
+Scrivere un programma che legge un numero compreso
+tra 1 e 5 e controlla se è primo.
+
+        
