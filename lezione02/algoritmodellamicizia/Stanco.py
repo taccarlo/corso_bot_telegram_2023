@@ -3,15 +3,33 @@ def rosso():
     si=1
     no=0
     risposta=int(input("sei in casa? inserisci una risposta se si digitare 1 se no digitare 0"))
-    if risposta==1:
-        print("ti va di mangiare qualcosa insieme?")
-        if risposta==1:
-            print("mangiate qualcosa")
-        else:      
+    if risposta==0:
+        print("lascia un messaggio, aspetta una risposta")
+    risposta2=int(print("ti va di mangiare qualcosa?"))
+    if risposta2==1:
+        print("mangiate qualcosa insieme, siete diventato amici! ora hai una persona in più a cui rompere le palle in caso di bisogno e viceversa")
     else:
-        print("lascia un messaggio")
+        blu()
+        
+        
 
-
+def blu():
+    r=input("E di bere qualcosa di caldo?")
+    while r!="si" and r!="no":
+        r=input("E di bere qualcosa di caldo?")
+    if (r=="si"):
+        r=input("scegli cosa vuoi bere: tè, caffè, cioccolata")
+        while(r!="tè" and r!="caffè" and r!="cioccolata"):
+            r=input("scegli cosa vuoi bere: tè, caffè, cioccolata")
+        if (r=="tè"):
+            print("Fatevi sto tè")
+        elif (r=="caffè"):
+            print("Fatevi sto caffè")
+        else:
+            print ("Fatevi sta cioccolata")
+        print("Siete diventati amici, hai una persona in più a cui poter rompere le palle in caso di bisongo e viceversa")
+    else:
+        parteVerde()
 
 
 def parteVerde():
@@ -36,6 +54,10 @@ def parteVerde():
 
 
 
+
+rosso()
+
+print("Siete diventati amici! Ora hai una persona in più a cui poter rompere le palle in caso di bisogno e viceversa!")
 
 
 
