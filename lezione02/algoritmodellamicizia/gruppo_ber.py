@@ -1,4 +1,3 @@
-
 def funzione3():
     n = 0
     print("allora svaghiamoci un po'...")
@@ -32,7 +31,25 @@ def funzione2():
         print("Siete diventati amici!")
         
     elif s1 == "no":
-            print ("funzione3()") #inizio del codice di Marco
+            funzione3()#inizio del codice di Marco
     else:
         print ("Rispondi con si o no") #in caso la risposta non sia si o no ripropongo la domanda
+        funzione2()
 
+def inCasa(aCasa):
+    if(aCasa == 1):
+        mangiare()
+    else:
+        print("L'ascia un messaggio.")
+        print("Aspetta di essere richiamato")
+        mangiare()
+    
+def mangiare():
+    risposta = str(input("Ti va di andare a mangiare qualcosa insieme?\n"))
+    if(risposta == 1):
+        print("Siete diventati amici!!")
+    else:
+        funzione2()#chiamata della seconda funzione in caso no
+
+print("Compongo il numero di telefono")
+inCasa(str(input("A casa?\n1 per si e 0 per no") ) )
