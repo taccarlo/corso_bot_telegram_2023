@@ -50,6 +50,6 @@ def rossa():
             print("Mangiate qualcosa assieme")
             print("Ora siete diventati amici!!")
             
-print(rossa())
+rossa()
         
         
