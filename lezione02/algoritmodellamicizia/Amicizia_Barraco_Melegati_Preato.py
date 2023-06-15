@@ -39,6 +39,9 @@ def rossa():
     r=input("La persona è a casa? (S/N) ")
     if r ==("n") or r==("N") :
         print("Lascio un messaggio, aspetto di essere richiamato")
+        d1= input("ti va di mangiare qualcosa assieme?(S/N) ")
+        if d1==("N") or d1==("n"):
+            blu()
     else:
        d1= input("ti va di mangiare qualcosa assieme?(S/N) ")
        if d1==("N") or d1==("n"):
@@ -47,6 +50,6 @@ def rossa():
             print("Mangiate qualcosa assieme")
             print("Ora siete diventati amici!!")
             
-print(rossa())
+rossa()
         
         
