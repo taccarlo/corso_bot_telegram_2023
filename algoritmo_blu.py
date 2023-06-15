@@ -1,4 +1,4 @@
-def gruppoblu(risposta1):
+def algoritmo_blu(risposta1):
     if risposta1 == "S":
         return "S"
     else: 
