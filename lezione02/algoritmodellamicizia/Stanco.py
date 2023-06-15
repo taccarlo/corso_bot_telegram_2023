@@ -32,4 +32,12 @@ def parteVerde():
     if(n>=5):                
         print(proposte)
         scelta=input("Scegli fra tutte le opzioni quella che ti appare meno disumana")
-        print("Svagatevi un po' insieme")
+        print("Svagatevi un po' insieme!")
+
+
+
+
+
+
+
+        
