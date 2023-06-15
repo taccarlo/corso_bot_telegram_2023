@@ -10,4 +10,3 @@ if risposta.lower() == "si":
     elif scelta.lower() == "cioccolata":
         print("Perfetto, andata per una bella tazza di cioccolata calda!")
 
-    
