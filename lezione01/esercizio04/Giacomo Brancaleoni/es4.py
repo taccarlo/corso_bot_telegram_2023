@@ -32,3 +32,16 @@ Altrimenti dare in output una lista che in prima posizione contiene
 il valore minimo dell'input, in seconda posizione la media e in terza posizione 
 contiene il valore massimo.
 """
+lista =[]
+i=0
+while i<4:
+    val = int(input("Inserisci un valore: "))
+    lista = lista + [val]
+    i=i+1
+lista.sort()
+lista2 =[]
+lista2.append(lista[0])
+media = (lista[0] + lista[1] + lista[2] + lista[3])/len(lista)
+lista2.append(media)
+lista2.append(lista[-1])
+print(lista2)
