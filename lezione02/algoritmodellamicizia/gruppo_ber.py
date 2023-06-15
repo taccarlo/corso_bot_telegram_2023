@@ -10,6 +10,11 @@ def funzione2():
             print("Fatevi sta", scelta)
         else:
             print("Fatevi sto", scelta)
+        print("Siete diventati amici!")
+        
+    elif s1 == "no":
+            funzione3()
     else:
-        funzione3()
+        print ("Rispondi con si o no")
+        funzione2()
 funzione2()
