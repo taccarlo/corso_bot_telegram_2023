@@ -3,7 +3,7 @@ se lo è stampate “pari” a terminale, altrimenti leggete un secondo numero.
 Se il secondo numero è dispari stampate “entrambi dispari”, 
 altrimenti stampate “primo dispari, secondo pari”
 
-Dati tre numeri identificare il minimo e il massimo
+C
 
 Si realizzi un programma che acquisisca da tastiera un numero
 e stampi il valore assoluto di tale numero.
