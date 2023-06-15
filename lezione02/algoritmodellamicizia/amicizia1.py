@@ -17,3 +17,27 @@ def casa():
         if(var2==1):
             domanda()   
 casa()
+
+domanda = input('e di bere qualcosa di caldo?')
+
+ 
+
+if (domanda=='si'):
+
+    bevanda = input ('che bevanda vuoi?')
+
+if (bevanda == 'te'):
+
+    print('facciamoci sto te' )         
+
+if (bevanda == 'caffe'):
+
+        print ('facciamoci sto caffe')
+
+if (bevanda == 'cioccolata'):
+
+        print ('facciamoci sta cioccolata')
+
+ 
+
+elif (domanda == 'no')
