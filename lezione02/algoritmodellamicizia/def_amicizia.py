@@ -1,3 +1,26 @@
+n = 0
+def verde():
+    if n == 0:
+        print("Allora sgranchiamoci un po'...")
+    voglia = input("... Cos'altro ti va di fare? ")
+    risposta = input("É una cosa che mi va di fare?(S/N) ")
+    if risposta == "s" or risposta == "S":
+        print ("E facciammolo insieme dai...")
+        print ("Svagetevi un po' insieme ")
+        print ("Siete diventati amici")
+    if risposta == "n" or risposta == "N":
+       No()
+def No():
+    global n
+    n = n + 1
+    if n < 7:
+        verde()
+    else:
+        print ("Scegli tra le opzioni quelle che ti appare meno disumana")
+        print ("Fattela piacere")
+        print ("Svagetevi un po' insieme ")
+        print ("Siete diventati amici")
+        
 def blu():
     r=input("E di bere qualcosa di caldo?(S/N) ")
     if r == ("N"):
