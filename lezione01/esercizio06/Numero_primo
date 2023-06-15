@@ -1,0 +1,11 @@
+Numero1= input("inserire numero compreso fra uno e 5:")
+Numero1= int (Numero1)
+
+if(Numero1<1 & Numero1>5):
+    print("Error")
+else:
+    if(Numero1==4 | Numero1!=1 ):
+        print ("il numero non è primo")
+    else:
+        print ("il numero è primo")
+

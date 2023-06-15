@@ -26,3 +26,25 @@ if risultato:
 else:
     print("vendita ko")
     print(libri_da_ordinare)
+def scambia_lettere(lista, lettera1, lettera2):
+    """
+    Prende in input una lista, una lettera1 e una lettera2 e ritorna una nuova lista con le occorrenze 
+    di lettera1 sostituite da lettera2 e viceversa.
+    """
+    nuova_lista = []
+    for elemento in lista:
+        if elemento == lettera1:
+            nuova_lista.append(lettera2)
+        elif elemento == lettera2:
+            nuova_lista.append(lettera1)
+        else:
+            nuova_lista.append(elemento)
+    return nuova_lista
+
+Concatenare due liste prese da tastiera
+
+Prendere in input una lista, la controlla 
+    e se contiene almeno un valore che non sia un intero ritorna un errore. 
+    Altrimenti dare in output una lista che in prima posizione contiene
+    il valore minimo dell'input, in seconda posizione la media e in terza posizione 
+    contiene il valore massimo.

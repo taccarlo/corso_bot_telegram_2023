@@ -1,0 +1,13 @@
+Numero1= input("inserire numero")
+Numero2= input("inserire numero")
+Numero1= int (Numero1)
+Numero2= int (Numero2)
+
+if (Numero1%2==0):
+    print ("Pari")
+else:
+    if (Numero2%2!=0 & Numero1%2==0):
+        print ("Primo pari secondo dispari")
+    else:
+        print ("entrambi dispari ")
+        
