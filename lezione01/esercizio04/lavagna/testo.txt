@@ -13,9 +13,10 @@ def scambia_lettere(lista, lettera1, lettera2):
             nuova_lista.append(elemento)
     return nuova_lista
 
-# Esempio di utilizzo
-lista = input("Inserisci una lista di elementi: ").split()
-lettera1 = input("Inserisci la prima lettera: ")
-lettera2 = input("Inserisci la seconda lettera: ")
-nuova_lista = scambia_lettere(lista, lettera1, lettera2)
-print("La nuova lista è:", nuova_lista)
+Concatenare due liste prese da tastiera
+
+Prendere in input una lista, la controlla 
+    e se contiene almeno un valore che non sia un intero ritorna un errore. 
+    Altrimenti dare in output una lista che in prima posizione contiene
+    il valore minimo dell'input, in seconda posizione la media e in terza posizione 
+    contiene il valore massimo.
