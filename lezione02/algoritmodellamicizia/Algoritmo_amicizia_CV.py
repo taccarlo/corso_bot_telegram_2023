@@ -4,10 +4,10 @@ def rosso():
     si=1
     no=0
     risposta=int(input("sei in casa? inserisci una risposta se si digitare 1 se no digitare 0"))
-    if risposta==0:
+    if risposta==no:
         print("lascia un messaggio, aspetta una risposta")
     risposta2=int(input("ti va di mangiare qualcosa?"))
-    if risposta2==1:
+    if risposta2==si:
         print("mangiate qualcosa insieme, siete diventato amici! ora hai una persona in più a cui rompere le palle in caso di bisogno e viceversa")
     else:
         blu()
@@ -63,10 +63,13 @@ def tante_prop():
     amicizia()
 def no_prop():
     o = input("Va bene la mia proposta?")
-        
-    def amicizia():
-        print("Adesso siete amici!!!")
-        return
-    blocco_verde()
+    if(o=="no"):
+        blocco_verde()
+    else:
+        amicizia()
+
+def amicizia():
+    print("Adesso siete amici!!!")
+    return
     
 rosso()
