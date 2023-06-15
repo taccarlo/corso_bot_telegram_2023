@@ -27,7 +27,7 @@ def blocco_verde():
     if n < 6 and n > 0 :
         no_prop()
         global o
-        if o == "SI" or o == "si" or o == "Si":
+        if o == "SI" or o == "si" or o == "Si" or o == "sì" or o == "Sì":
             amicizia()
         else:
             p = input("Proponi qualcosa ")
