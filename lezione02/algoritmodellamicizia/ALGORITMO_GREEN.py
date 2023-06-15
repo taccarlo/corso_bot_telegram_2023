@@ -4,7 +4,7 @@ def algoritmo_verde(risposta3):
     if risposta3 == "N":
 
         print("Svaghiamoci un pò... ", "Cos'altro ti va di fare?")
-        question = print("E' una cosa che piace anche a me?")
+        question = print("E' una cosa che piace anche a me? S o N")
     
     if question == "S":
         print("Dopo esservi svagati insieme, diventerete amici")
