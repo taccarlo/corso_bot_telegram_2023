@@ -14,7 +14,7 @@ def anni_lavoro():
         print("anno di lavoro", c)
     
     z = input("INFORTUNIO DEBILITANTE ?")
-    if z == "vero" or z == "Vero":
+    if z == "si" or z == "vero" or "Si":
         print("pensione")
     else:
         print("ultimi anni di lavoro")
