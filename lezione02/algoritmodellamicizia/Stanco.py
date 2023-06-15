@@ -5,7 +5,7 @@ def rosso():
     risposta=int(input("sei in casa? inserisci una risposta se si digitare 1 se no digitare 0"))
     if risposta==0:
         print("lascia un messaggio, aspetta una risposta")
-    risposta2=int(print("ti va di mangiare qualcosa?"))
+    risposta2=int(input("ti va di mangiare qualcosa?"))
     if risposta2==1:
         print("mangiate qualcosa insieme, siete diventato amici! ora hai una persona in più a cui rompere le palle in caso di bisogno e viceversa")
     else:
@@ -14,10 +14,12 @@ def rosso():
         
 
 def blu():
+    s=1
+    n=0
     r=input("E di bere qualcosa di caldo?")
-    while r!="si" and r!="no":
+    while r!=0 and r!=1:
         r=input("E di bere qualcosa di caldo?")
-    if (r=="si"):
+    if (r==1):
         r=input("scegli cosa vuoi bere: tè, caffè, cioccolata")
         while(r!="tè" and r!="caffè" and r!="cioccolata"):
             r=input("scegli cosa vuoi bere: tè, caffè, cioccolata")
