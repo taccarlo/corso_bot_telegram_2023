@@ -1,21 +1,28 @@
-def scambia_lettere(lista, lettera1, lettera2):
-    """
-    Prende in input una lista, una lettera1 e una lettera2 e ritorna una nuova lista con le occorrenze 
-    di lettera1 sostituite da lettera2 e viceversa.
-    """
-    nuova_lista = []
-    for elemento in lista:
-        if elemento == lettera1:
-            nuova_lista.append(lettera2)
-        elif elemento == lettera2:
-            nuova_lista.append(lettera1)
-        else:
-            nuova_lista.append(elemento)
-    return nuova_lista
-
-# Esempio di utilizzo
-lista = input("Inserisci una lista di elementi: ").split()
-lettera1 = input("Inserisci la prima lettera: ")
-lettera2 = input("Inserisci la seconda lettera: ")
-nuova_lista = scambia_lettere(lista, lettera1, lettera2)
-print("La nuova lista è:", nuova_lista)
+#creare una lista libri titolo e quantità
+#creare una funzione del libro che prende in input il nome del libro da prendere,poi controlla che il lkibro sia nell'elenco,
+#se non è presente inserisce in lista libri d a ordinjare,se è presente decremanta la qnatitaà disponoibile, se la quantuitàarriva a 0n elòiminare il libhro
+libri = [
+    {"titolo":"arca di noè","qty":10,"prezzo":5},
+    {"titolo":"bibbia","qty":11,"prezzo":2},
+    {"titolo":"corano","qty":1,"prezzo":7},
+]
+libri_da_ordinare = []
+def vendi_libro(titolo):
+    trovato = False
+    for i in libri:
+        if titolo == i["titolo"]:
+            i["qty"] -= 1
+            if i["qty"] == 0:
+                libri.remove(i)
+            trovato = True
+    if trovato == False:
+        libri_da_ordinare.append(titolo)
+        return trovato
+richiesti = input("quale libro ")
+risultato = vendi_libro(richiesti)
+if risultato:
+    print("vendita ok")
+    print(libri)
+else:
+    print("vendita ko")
+    print(libri_da_ordinare)
