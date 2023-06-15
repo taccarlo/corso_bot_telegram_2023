@@ -76,10 +76,12 @@ def neuroni():
         list.append(x)
     print(list)
 
-    global numeroMagico
-    num = numeroMagico
-    numeroMagico = ottieniRisposta(num, 5)
 
+global numeroMagico
+num = numeroMagico
+numeroMagico = ottieniRisposta(num, 5)
+
+    
 # prima domanda (1,3,5)
 numeriDispari()
 # seconda domanda (partendo da 2 scrivo 2 numeri sì e 2 no) PRIMO
