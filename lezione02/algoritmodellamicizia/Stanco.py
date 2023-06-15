@@ -41,12 +41,12 @@ def parteVerde():
             proposta=input("Cos'altro ti va di fare? ")
             proposte.append(proposta)
             rsposta=input("Vuoi farla anche tu? si/no")
-                if(risposta=="si"):
-                    print("E' facciamolo insieme!")
-                    print("Svatevi un po' insieme")
-                    break
-                elif(risposta="no"):
-                    n=n+1
+            if(rsposta=="si"):
+                print("E' facciamolo insieme!")
+                print("Svatevi un po' insieme")
+                break
+            else:
+                n=n+1
     if(n>=5):                
         print(proposte)
         scelta=input("Scegli fra tutte le opzioni quella che ti appare meno disumana")
