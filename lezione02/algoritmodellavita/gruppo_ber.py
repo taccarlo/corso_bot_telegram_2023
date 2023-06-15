@@ -2,7 +2,7 @@ def funzione3():
     print("ultimi anni di lavoro")
     promozioni = int(input("quante promozioni? "))
     if (promozioni > 3):
-        print("capo di azzienda")
+        print("capo di azienda")
     else:
         print("PENSIONE")
 
@@ -20,6 +20,6 @@ def funzione2():
             infortunio = True
         
     if infortunio:
-        print("Sono andato in pensione")
+        print("PENSIONE")
     else:
         funzione3()
