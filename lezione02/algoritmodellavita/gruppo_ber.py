@@ -1,3 +1,12 @@
+def funzione3():
+    print("ultimi anni di lavoro")
+    promozioni = int(input("quante promozioni? "))
+    if (promozioni > 3):
+        print("capo di azzienda")
+    else:
+        print("PENSIONE")
+
+
 def funzione2():
     print ("Inizio a lavorare")
     i = 0
