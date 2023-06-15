@@ -1,0 +1,7 @@
+Numero1= input("inserire numero")
+Numero1= int (Numero1)
+
+if(Numero1<0):
+    print(Numero1*-1)
+else:
+    print(Numero1)
