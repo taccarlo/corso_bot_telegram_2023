@@ -1,3 +1,19 @@
+"""
+Il programma simula un'app di creazione di pozioni magiche. 
+Ogni pozione ha un nome ( la chiave), un costo e una
+lista di ingredienti necessari. Gli utenti possono
+visualizzare l'elenco delle pozioni disponibili, 
+cercare una pozione per nome e creare una nuova pozione.
+
+# Menu principale
+while True:
+    print("\n=== App Creazione Pozioni        Magiche ===")
+    print("1. Mostra elenco delle pozioni")
+    print("2. Cerca una pozione")
+    print("3. Crea una nuova pozione")
+    print("4. Esci")
+"""
+
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from telegram.ext import filters, MessageHandler, ApplicationBuilder, CommandHandler, ContextTypes
