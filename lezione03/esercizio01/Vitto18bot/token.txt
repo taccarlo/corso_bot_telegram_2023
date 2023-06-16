@@ -1,2 +1,1 @@
-**/.DS_store
-**/token.txt
+5777554355:AAH5yzWbVfag5HKXyENS7m3rKsC9rVR_OF0
