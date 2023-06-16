@@ -3,6 +3,11 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, filters, MessageHandler, ApplicationBuilder, ContextTypes
 
+
+# Installing
+# You can install or upgrade python-telegram-bot via
+# pip install python-telegram-bot --upgrade
+
 # QUI LEGGIAMO DAL FILE TOKEN.txt IL TOKEN DEL BOT
 with open("token.txt", "r") as f:
     TOKEN = f.read()
