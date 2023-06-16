@@ -30,16 +30,20 @@ with open("token.txt", "r") as f:
     TOKEN = f.read()
     print("Il tuo token è ", TOKEN)
 
+
 async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     lang = "linguaggio utilizzato: "+update.effective_user.language_code
     await update.message.reply_text(f'Hello {update.effective_user.first_name}! {lang}')
 
+
 async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
+
 
 async def caps(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text_caps = ' '.join(context.args).upper()
     await context.bot.send_message(chat_id=update.effective_chat.id, text=text_caps)
+
 
 async def lista(update: Update, context: ContextTypes.DEFAULT_TYPE):
     global pozioni
@@ -48,9 +52,11 @@ async def lista(update: Update, context: ContextTypes.DEFAULT_TYPE):
         message = message+x+" "
     await update.message.reply_text(f'La tua lista è {message}' )
 
+
 async def cerca(update: Update, context : ContextTypes.DEFAULT_TYPE):
     risposta = "il prezzo è "+str(pozioni["Pozione dell'amore"][0])
     await update.message.reply_text(risposta)
+
 
 async def crea(update: Update, context : ContextTypes.DEFAULT_TYPE):
     print("ho ricevuto: ", context.args)
@@ -61,6 +67,7 @@ async def crea(update: Update, context : ContextTypes.DEFAULT_TYPE):
     global pozioni
     pozioni[nomepozione]=[prezzopozione,["ingrediente1","ingrediente2"]]
     await update.message.reply_text("pozione aggiunta con successo")
+
 
 def main():
 
