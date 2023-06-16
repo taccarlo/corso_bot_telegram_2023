@@ -8,7 +8,8 @@ with open("token.txt", "r") as f:
     print("Il tuo token è ", TOKEN)
 
 async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    await update.message.reply_text(f'Hello {update.effective_user.first_name}')
+    lang = "linguaggio utilizzato: " +update.effective_user.language_code
+    await update.message.reply_text(f'Hello {update.effective_user.first_name} {lang}')
 
 async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
