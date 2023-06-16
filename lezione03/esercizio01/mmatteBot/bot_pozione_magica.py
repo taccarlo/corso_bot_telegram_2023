@@ -1,3 +1,19 @@
+"""
+Il programma simula un'app di creazione di pozioni magiche. 
+Ogni pozione ha un nome ( la chiave), un costo e una
+lista di ingredienti necessari. Gli utenti possono
+visualizzare l'elenco delle pozioni disponibili, 
+cercare una pozione per nome e creare una nuova pozione.
+
+# Menu principale
+while True:
+    print("\n=== App Creazione Pozioni        Magiche ===")
+    print("1. Mostra elenco delle pozioni")
+    print("2. Cerca una pozione")
+    print("3. Crea una nuova pozione")
+    print("4. Esci")
+"""
+
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from telegram.ext import filters, MessageHandler, ApplicationBuilder, CommandHandler, ContextTypes
@@ -8,8 +24,8 @@ with open("token.txt", "r") as f:
     print("Il tuo token è ", TOKEN)
 
 async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    lang = "linguaggio utilizzato: " +update.effective_user.language_code
-    await update.message.reply_text(f'Hello {update.effective_user.first_name} {lang}')
+    lang = "linguaggio utilizzato: "+update.effective_user.language_code
+    await update.message.reply_text(f'Hello {update.effective_user.first_name}! {lang}')
 
 async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
