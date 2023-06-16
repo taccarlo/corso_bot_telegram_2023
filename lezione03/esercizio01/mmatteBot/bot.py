@@ -19,7 +19,6 @@ async def caps(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text=text_caps)
     
 def main():
-
     echo_handler = MessageHandler(filters.TEXT & (~filters.COMMAND), echo)
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(CommandHandler("hello", hello))
