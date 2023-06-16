@@ -2,7 +2,6 @@
 
 import sqlite3
 db = sqlite3.connect("./chinook.db")
-#db = sqlite3.connect("weather.db")
 print("Opened database successfully");
 
 try:
