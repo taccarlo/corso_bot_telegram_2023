@@ -7,7 +7,7 @@ with open("token.txt", "r") as f:
     print("Il tuo token è ", TOKEN)
 
 async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    await update.message.reply_text(f'Hello {update.effective_user.first_name}')
+    await update.message.reply_text(f'hello {update.effective_user.first_name}')
 
 
 def main():
