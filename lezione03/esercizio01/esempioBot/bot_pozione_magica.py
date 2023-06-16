@@ -18,6 +18,13 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from telegram.ext import filters, MessageHandler, ApplicationBuilder, CommandHandler, ContextTypes
 
+
+pozioni = {
+        "Pozione dell'amore":[5.9,["Taurina","Steroidi"]],
+        "pozione felicità":[9.1,["montenegro","tren"]],
+        "pozione forza":[10, ["panca piana", "bilancere","sudore del gym bro"]] 
+        }
+
 # IMPORTANTE: inserire il token fornito dal BotFather nella seguente stringa
 with open("token.txt", "r") as f:
     TOKEN = f.read()
@@ -33,7 +40,28 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def caps(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text_caps = ' '.join(context.args).upper()
     await context.bot.send_message(chat_id=update.effective_chat.id, text=text_caps)
-    
+
+async def lista(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    global pozioni
+    message = ""
+    for x in pozioni.keys():
+        message = message+x+" "
+    await update.message.reply_text(f'La tua lista è {message}' )
+
+async def cerca(update: Update, context : ContextTypes.DEFAULT_TYPE):
+    risposta = "il prezzo è "+str(pozioni["Pozione dell'amore"][0])
+    await update.message.reply_text(risposta)
+
+async def crea(update: Update, context : ContextTypes.DEFAULT_TYPE):
+    print("ho ricevuto: ", context.args)
+    query = context.args[0]
+    lista = query.split(',')
+    nomepozione = lista[0]
+    prezzopozione = lista[1]
+    global pozioni
+    pozioni[nomepozione]=[prezzopozione,["ingrediente1","ingrediente2"]]
+    await update.message.reply_text("pozione aggiunta con successo")
+
 def main():
 
     echo_handler = MessageHandler(filters.TEXT & (~filters.COMMAND), echo)
@@ -41,6 +69,9 @@ def main():
     app.add_handler(CommandHandler("hello", hello))
     app.add_handler(CommandHandler("echo", echo))
     app.add_handler(CommandHandler('caps', caps))
+    app.add_handler(CommandHandler("lista",lista))
+    app.add_handler(CommandHandler("cerca",cerca))
+    app.add_handler(CommandHandler("crea",crea))
     app.add_handler(echo_handler)
     app.run_polling()
 
